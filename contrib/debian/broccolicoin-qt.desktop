@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Broccolicoin Core
+Comment=Connect to the Broccolicoin P2P Network
+Comment[de]=Verbinde mit dem Broccolicoin peer-to-peer Netzwerk
+Comment[fr]=Broccolicoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Broccolicoin, eşten eşe kriptografik sanal para birimi
+Exec=broccolicoin-qt %u
+Terminal=false
+Type=Application
+Icon=broccolicoin128
+MimeType=x-scheme-handler/broccolicoin;
+Categories=Office;Finance;

@@ -1,0 +1,33 @@
+# /etc/conf.d/broccolicoind: config file for /etc/init.d/broccolicoind
+
+# Config file location
+#BROCCOLICOIND_CONFIGFILE="/etc/broccolicoin/broccolicoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BROCCOLICOIND_USER)
+#BROCCOLICOIND_PIDDIR="/var/run/broccolicoind"
+
+# What filename to give the pidfile
+#BROCCOLICOIND_PIDFILE="${BROCCOLICOIND_PIDDIR}/broccolicoind.pid"
+
+# Where to write broccolicoind data (be mindful that the blockchain is large)
+#BROCCOLICOIND_DATADIR="/var/lib/broccolicoind"
+
+# User and group to own broccolicoind process
+#BROCCOLICOIND_USER="broccolicoin"
+#BROCCOLICOIND_GROUP="broccolicoin"
+
+# Path to broccolicoind executable
+#BROCCOLICOIND_BIN="/usr/bin/broccolicoind"
+
+# Nice value to run broccolicoind under
+#BROCCOLICOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BROCCOLICOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for broccolicoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BROCCOLICOIND_SIGTERM_TIMEOUT=60
